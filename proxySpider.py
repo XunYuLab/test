@@ -13,6 +13,7 @@ class ProxyspiderSpider(scrapy.Spider):
 
     def parse(self, response):
         # 爬取代理数据
+		# 测试更新
         selector = response.xpath('//table[@id="ip_list"]/tr')
 
         items = []
